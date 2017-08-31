@@ -5,6 +5,12 @@
   uuid: teamcity-0
   minimum_rancher_version: v0.51.0
   questions:
+    - variable: osman_name
+      description: "Osman adi nedir"
+      label: "Osman Name"
+      required: false
+      default: "Nehir"
+      type: "string"
     - variable: http_port
       description: "HTTP port to access TeamCity Server UI"
       label: "TeamCity HTTP Port"
