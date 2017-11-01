@@ -5,9 +5,9 @@
   uuid: teamcity-0
   minimum_rancher_version: v0.51.0
   questions:
-    - variable: osman_name
-      description: "Osman adi nedir"
-      label: "Osman Name"
+    - variable: degisken_name
+      description: "Degisken Adi Nedir"
+      label: "Degisken Ismi"
       required: false
       default: "Nehir"
       type: "string"
