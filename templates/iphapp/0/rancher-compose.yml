@@ -1,6 +1,11 @@
-version: '2'
-services:
-  IPH-UI:
+.catalog:
+  name: "IPH"
+  version: "v0.0.1"
+  description: "IPH UIs"
+  uuid: iphapp-0
+  minimum_rancher_version: v0.51.0
+
+IPH-UI:
     scale: 1
     start_on_create: true
   IPH-Mobile:
