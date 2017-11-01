@@ -4,7 +4,20 @@
   description: "IPH UIs"
   uuid: iphapp-0
   minimum_rancher_version: v0.51.0
-
+  
+questions:
+    - variable: "hostname"
+      description: "Dokuwiki hostname"
+      label: "Hostname:"
+      required: true
+      default: "dw.example.com"
+      type: "string"
+    - variable: "http_port"
+      description: "HTTP port to expose on host. Will be used to bind TCP"
+      label: "HTTP port:"
+      required: true
+      default: 80
+      type: "string"
 IPH-UI:
     scale: 1
     start_on_create: true
