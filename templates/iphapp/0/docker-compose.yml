@@ -1,0 +1,18 @@
+version: '2'
+services:
+  IPH-UI:
+    image: yahyaozturk/iph:jenkins-IPH-UI-jenkins-build-3
+    stdin_open: true
+    tty: true
+    ports:
+    - 80:80/tcp
+    labels:
+      io.rancher.container.pull_image: always
+  IPH-Mobile:
+    image: yahyaozturk/iph:jenkins-IPH-Mobile-master-5
+    stdin_open: true
+    tty: true
+    ports:
+    - 8080:80/tcp
+    labels:
+      io.rancher.container.pull_image: always
